@@ -18,8 +18,14 @@
   <p><a class="btn btn-lg btn-success" ng-href="#">Splendid!</a></p>
 </div>
 
+</div>
+</head>
+<body>
+  <div id='map'><p>this is where the map will go</p>
+
 <div class="row marketing">
   <h4>HTML5 Boilerplate</h4>
+
   <p>
     HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
   </p>
@@ -32,7 +38,16 @@
   <h4>Karma</h4>
   <p>Spectacular Test Runner for JavaScript.</p>
 </div>
+<div id="brookemap"></div>
 
 <div class="footer">
-  <p>♥ from the Yeoman team</p>
+  <p>♥ By Brooke Casey</p>
 </div>
+<script>
+var map = L.mapbox.map('map', 'examples.map-i86nkdio')
+    .setView([40, -74.50], 9);
+</script>
+<script>
+        // Create a map in the div #map
+        L.mapbox.map('brookemap','brookebc.ie40gpl6');
+</script>
