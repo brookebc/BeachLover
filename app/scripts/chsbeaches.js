@@ -1,4 +1,4 @@
-var beachdatapoints = [
+var beachPoints = [
   {
     "type": "Feature",
     "geometry": {

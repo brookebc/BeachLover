@@ -1,6 +1,7 @@
 var map = L.map('map').setView([32.78233,-79.934236], 9);;
 	var ui = document.getElementById('map-ui');
 	var locateLayer = L.mapbox.featureLayer().addTo(map);
+
 $(function() {
 	oltStoryTellers.init();
 });
@@ -13,9 +14,9 @@ var oltStoryTellers = {
 	initStyling: function() {
 		map.setView([32.78233,-79.934236], 10);
 		
-		oltStoryTellers.addLayer(L.mapbox.tileLayer('calweb.i95d7glk'), 'Base Map', 1);
+		oltStoryTellers.addLayer(L.mapbox.tileLayer('brookebc.ido5phje'), 'Base Map', 1);
 		oltStoryTellers.addLayer(L.geoJson(easements), 'Easements', 2);
-		oltStoryTellers.addLayer(L.geoJson(easementPoints, { onEachFeature: oltStoryTellers.onEachFeature }), 'Story Marker', 3);
+		oltStoryTellers.addLayer(L.geoJson(beachPoints, { onEachFeature: oltStoryTellers.onEachFeature }), 'Story Marker', 3);
 	},
 	initEvents: function() {
 		$("#map-ui").on("click", "#geolocate", function(e) {
@@ -116,3 +117,4 @@ var oltStoryTellers = {
 		});
 	}
 };
+

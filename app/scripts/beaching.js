@@ -14,7 +14,7 @@
 		// map.setView([lat,long], 15);
 		// detailMap.addLayer(L.mapbox.tileLayer('calweb.i95d7glk'), 'Base Map', 1);
 		// detailMap.addLayer(L.geoJson(easements), 'Easements', 2);
-		detailMap.addLayer(L.geoJson(beachdatapoints, { onEachFeature: detailMap.onEachFeature }), 'Lowcountry Open Land Trust', 3);
+		beachMap.addLayer(L.geoJson(beachPoints, { onEachFeature: beachMap.onEachFeature }), 'Lowcountry Open Land Trust', 3);
 	},
 	initEvents: function() {
 		
