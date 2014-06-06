@@ -1,7 +1,7 @@
 <div class="header">
   <ul class="nav nav-pills pull-right">
-    <li class="active"><a ng-href="#">Home</a></li>
-    <li><a ng-href="#">About</a></li>
+    <li class="active"><a ng-href="#/">Home</a></li>
+    <li><a ng-href="#/beach">Detail</a></li>
     <li><a ng-href="#">Contact</a></li>
     <li ng-cloak ng-show-auth="login" ng-controller="LoginController"><a href="#" ng-click="logout()">Log Out</a></li>
     <li ng-cloak ng-show-auth="['logout','error']"><a href="#/login">Log In</a></li>
@@ -10,45 +10,36 @@
 </div>
 
 <div class="jumbotron">
-  <h1>'Allo, 'Allo!</h1>
-  <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
-  </p>
+  <h1>HEY BEACH LOVER!</h1>
+  
   <p><a class="btn btn-lg btn-success" ng-href="#">Splendid!</a></p>
 </div>
 
 </div>
 </head>
 <body>
-  <div id='map'><p>this is where the map will go</p>
+  <div id="map"><p>this is where the map will go</p>
 
 <div class="row marketing">
-  <h4>HTML5 Boilerplate</h4>
-
+  <h4>Hey Beach Lover!</h4>
   <p>
-    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
+    Description and How to use the App
   </p>
 
-  <h4>Angular</h4>
-  <p>
-    AngularJS is a toolset for building the framework most suited to your application development.
-  </p>
-
-  <h4>Karma</h4>
-  <p>Spectacular Test Runner for JavaScript.</p>
+  <h4>This is where the first map will go</h4>
+  <p>It will have already located the person and identified beaches within 100 mile radius</p>
 </div>
-<div id="brookemap"></div>
+
 
 <div class="footer">
   <p>♥ By Brooke Casey</p>
   <a href='/documents/BeacherLoverApp-RequirementsDocument-June2014.pdf'>View Requirements Documentation</a>
 </div>
 <script>
-var map = L.mapbox.map('map', 'examples.map-i86nkdio')
-    .setView([40, -74.50], 9);
+  // Create a map in the div #map
+var map = L.mapbox.map('map', 'brookebc.ido5phje' )
+    // .setView([40, -74.50], 9);
 </script>
-<script>
-        // Create a map in the div #map
-        L.mapbox.map('brookemap','brookebc.ie40gpl6');
-</script>
+
+
+<link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.3/mapbox.css' rel='stylesheet' />

@@ -16,9 +16,9 @@ angular.module('beachLoverApp', [
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
-      .when('/beachdetail', {
+      .when('/beach', {
         authRequired: false, // if true, must log in before viewing this page
-        templateUrl: 'views/detail.html',
+        templateUrl: 'views/beachdetail.html',
         controller: 'MainCtrl'
       })
       .when('/login', {
