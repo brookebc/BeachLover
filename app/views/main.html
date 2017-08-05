@@ -2,30 +2,47 @@
   <ul class="nav nav-pills pull-right">
     <li class="active"><a ng-href="#/">Home</a></li>
     <li><a ng-href="#/beach">Detail</a></li>
+    <li><a ng-href="#/geo">Find Me</a></li>
     <li><a ng-href="#/contact">Contact</a></li>
+    <li><a ng-href="#/map">Map</a></li>
     <li ng-cloak ng-show-auth="login" ng-controller="LoginController"><a href="#" ng-click="logout()">Log Out</a></li>
     <li ng-cloak ng-show-auth="['logout','error']"><a href="#/login">Log In</a></li>
+    
   </ul>
   <h3 class="text-muted">BeachLover</h3>
 </div>
 
 <div class="jumbotron">
   <h1>HEY BEACH LOVER!</h1>
+  <img src="images/beach-girl.png"></img>
 </div>
 
 </div>
 </head>
 <body>
+  <div class="row">
    <div class="col-lg-6">
     <h1>Hey Beach Lover!</h1>
     <h4>Description and How to use the App</h4>
      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, rerum nemo dolore. Veritatis, excepturi, vero architecto ut dolorum inventore non ipsum natus sit error repellendus qui facere quos illo recusandae.</p>
        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, rerum nemo dolore. Veritatis, excepturi, vero architecto ut dolorum inventore non ipsum natus sit error repellendus qui facere quos illo recusandae.</p>
   </div>
-  <div class="col-lg-6" id="map"><p>this is where the map will go</p>
+  <div class="col-lg-6" id="map">
+    <h3>this is where the map will go</h3>
   </div>
+</div>
+<div class="row">
+   <div class="col-lg-6 findme">
+        <h4>GeoLocate User</h4>
+        <button type="button" class="btn btn-default pickme" id="geolocate">Find Me</button>
+    </div>
+    <div class="col-lg-6 findbeaches">
+         <h4>Find Neaby Beaches</h4>
+        <button type="button" class="btn btn-default beachme">Beach Me</button>
+    </div>
+</div>
+<hr>
 
-<hr><hr>
 
 <div class="row marketing">
   <h2>Beaches Nearby</h2>
@@ -37,9 +54,9 @@
 
   <div class="beach-preview">
   <ul>
-    <li class="beach-snap"><img ng-src="images/beach-holder.jpg"></img></li>
-    <li class="beach-snap"><img ng-src="images/beach-holder.jpg"></img></li>
-    <li class="beach-snap"><img ng-src="images/beach-holder.jpg"></img></li>
+     <li class="beach-snap"><img ng-src="images/beach-holder.jpg"></img><br><p><a class="btn btn-md btn-success" ng-click="#">See More</a></p></li>
+      <li class="beach-snap"><img ng-src="images/beach-holder.jpg"></img><br><p><a class="btn btn-md btn-success" ng-click="#">See More</a></p></li>
+       <li class="beach-snap"><img ng-src="images/beach-holder.jpg"></img><br><p><a class="btn btn-md btn-success" ng-click="#">See More</a></p></li>
   </ul>
 </div>
 </div>
@@ -50,10 +67,8 @@
   <a href='/documents/BeacherLoverApp-RequirementsDocument-June2014.pdf'>View Requirements Documentation</a>
 </div>
 <script>
-  // Create a map in the div #map
-var map = L.mapbox.map('map', 'brookebc.ido5phje' )
-    // .setView([40, -74.50], 9);
+var map = L.mapbox.map('map', 'brookebc.if5olg5a', {
+                    scrollWheelZoom: false
+                }).setView([32.907, -79.802], 9);
 </script>
-
-
 <link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.3/mapbox.css' rel='stylesheet' />

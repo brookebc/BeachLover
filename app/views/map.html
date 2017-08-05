@@ -3,20 +3,15 @@
     <li><a ng-href="#/">Home</a></li>
     <li><a ng-href="#/beach">Detail</a></li>
     <li><a ng-href="#/geo">Find Me</a></li>
-    <li class="active"><a ng-href="#/contact">Contact</a></li>
-    <li><a ng-href="#/map">Map</a></li>
+    <li><a ng-href="#/contact">Contact</a></li>
+    <li class="active"><a ng-href="#/map">Map</a></li>
     <li ng-cloak ng-show-auth="login" ng-controller="LoginController"><a href="#" ng-click="logout()">Log Out</a></li>
     <li ng-cloak ng-show-auth="['logout','error']"><a href="#/login">Log In</a></li>
   </ul>
   <h3 class="text-muted">BeachLover</h3>
 </div>
 
-<body>
-	<h2>Also there will be a contact form</h2>
-	<p>this is where all my cool contact info is gonna be</p>
-</body>
+<div id="map">
+  <p> this is where the map will go</p>
+  </div>
 
-<div class="footer">
-  <p>♥ By Brooke Casey</p>
-  <a href='/documents/BeacherLoverApp-RequirementsDocument-June2014.pdf'>View Requirements Documentation</a>
-</div>

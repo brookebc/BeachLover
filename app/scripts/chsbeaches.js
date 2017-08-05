@@ -1,182 +1,102 @@
 var beachPoints = [
   {
     "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [-80.078526,32.717422]
-    },
     "properties": {
-    	"name": "Angel Oak",
-      "title": "Angel Oak",
-      "FOCUS_AREA": "CAWS Sea Islands",
-      "description": "Angel Oak Park, 3688 Angel Oak Rd, Johns Island, SC 29455",
-      "marker-color": "#fc4353",
-      "marker-size": "large",
-      "marker-symbol": "monument",
-      "lat": 32.717422,
-      "lng": -80.078526
+    "name":"Sullivan's Island Beach",
+    "title": "Sullivan's Island Beach",
+    "popupContent": "Sullivan's Island Beach",
+    "amenity": "free-parking",
+    "marker-color": "#1087bf",
+    "marker-size": "medium",
+    "marker-symbol": "swimming"
+    },
+      "geometry": {
+          "type": "Point",
+          "coordinates": [-79.83778, 32.76333]
     }
   },
   {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [-79.85172271728516,32.75551989829049]
-    },
+  "type": "Feature",
     "properties": {
-    	"name": "Sullivans Island Beach",
-      "title": "Sullivans Island Beach",
-      "FOCUS_AREA": "CAWS Sea Islands",
-      "description": "Angel Oak Park, 3688 Angel Oak Rd, Johns Island, SC 29455",
-      "marker-color": "#fc4353",
-      "marker-size": "large",
-      "marker-symbol": "monument",
-      "lat": 32.75551989829049,
-      "lng": -79.85172271728516
+    "name":"Folly Beach",
+    "title": "Folly Beach",
+    "popupContent": "Folly Beach",
+    "amenity": "free-parking",
+    "marker-color": "#1087bf",
+    "marker-size": "medium",
+    "marker-symbol": "swimming"
+    },
+      "geometry": {
+          "type": "Point",
+          "coordinates": [-79.939213,32.666152]
     }
   },
   {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [-79.84187364578247,32.77525961924842]
-    },
+  "type": "Feature",
     "properties": {
-    	"name": "Goldbug Island",
-      "title": "Goldbug Island",
-      "FOCUS_AREA": "CAWS Sea Islands",
-      "description": "Angel Oak Park, 3688 Angel Oak Rd, Johns Island, SC 29455",
-      "marker-color": "#fc4353",
-      "marker-size": "large",
-      "marker-symbol": "monument",
-    	"lat": 32.77525961924842,
-    	"lng": -79.84187364578247
+    "name":"North Myrtle Beach",
+    "title": "North Myrtle Beach",
+    "popupContent": "North Myrtle Beach",
+    "amenity": "free-parking",
+    "marker-color": "#1087bf",
+    "marker-size": "medium",
+    "marker-symbol": "swimming"
+    },
+      "geometry": {
+          "type": "Point",
+          "coordinates": [-78.680974,33.822216]
     }
   },
   {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [-79.7624158859253,32.808621338562936]
-    },
+  "type": "Feature",
     "properties": {
-    	"name": "Goat Island",
-      "title": "Goat Island",
-      "FOCUS_AREA": "CAWS Sea Islands",
-      "description": "Angel Oak Park, 3688 Angel Oak Rd, Johns Island, SC 29455",
-      "marker-color": "#fc4353",
-      "marker-size": "large",
-      "marker-symbol": "monument",
-    	"lat": 32.808621338562936,
-    	"lng": -79.7624158859253
+    "name":"Edisto Beach",
+    "title": "Edisto Beach",
+    "popupContent": "Edisto Beach",
+    "amenity": "free-parking",
+    "marker-color": "#1087bf",
+    "marker-size": "medium",
+    "marker-symbol": "fast-food"
+    },
+      "geometry": {
+          "type": "Point",
+          "coordinates": [-80.324402,32.487613]
     }
   },
   {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [-79.84090805053711,32.882001879004896]
-    },
+  "type": "Feature",
     "properties": {
-    	"name": "Parkers Island",
-      "title": "Parkers Island",
-      "FOCUS_AREA": "CAWS Cooper/Wando",
-      "description": "Angel Oak Park, 3688 Angel Oak Rd, Johns Island, SC 29455",
-      "marker-color": "#fc4353",
-      "marker-size": "large",
-      "marker-symbol": "monument",
-      "lat": 32.882001879004896,
-    	"lng": -79.84090805053711
+    "name":"Surfside Beach",
+    "title": "Surfside Beach",
+    "popupContent": "Surfside Beach",
+    "amenity": "free-parking",
+    "marker-color": "#1087bf",
+    "marker-size": "medium",
+    "marker-symbol": "swimming"
+    },
+      "geometry": {
+          "type": "Point",
+          "coordinates": [-78.973056,33.606111]
     }
   },
   {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [-79.89566802978516,32.71624397197978]
-    },
+  "type": "Feature",
     "properties": {
-    	"name": "Black Island",
-      "title": "Black Island",
-      "FOCUS_AREA": "CAWS Sea Islands",
-      "description": "Angel Oak Park, 3688 Angel Oak Rd, Johns Island, SC 29455",
-      "marker-color": "#fc4353",
-      "marker-size": "large",
-      "marker-symbol": "monument",
-      "lat": 32.71624397197978,
-    	"lng": -79.89566802978516
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [-79.92180347442627,32.72373589098602]
+    "name":"Isle of Palms Beach",
+    "title": "Isle of Palms Beach",
+    "popupContent": "Isle of Palms Beach",
+    "amenity": "free-parking",
+    "marker-color": "#1087bf",
+    "marker-size": "medium",
+    "marker-symbol": "fast-food"
     },
-    "properties": {
-    	"name": "Fiddler's Green",
-      "title": "Fiddler's Green",
-      "FOCUS_AREA": "CAWS Sea Islands",
-      "description": "Angel Oak Park, 3688 Angel Oak Rd, Johns Island, SC 29455",
-      "marker-color": "#fc4353",
-      "marker-size": "large",
-      "marker-symbol": "monument",
-      "lat": 32.72373589098602,
-      "lng": -79.92180347442627
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [-79.93204951286316,32.71317481139637]
-    },
-    "properties": {
-    	"name": "Heron Crane Island",
-      "title": "Heron/Crane Island",
-      "FOCUS_AREA": "CAWS Sea Islands",
-      "description": "Angel Oak Park, 3688 Angel Oak Rd, Johns Island, SC 29455",
-      "marker-color": "#fc4353",
-      "marker-size": "large",
-      "marker-symbol": "monument",
-      "lat": 32.71317481139637,
-      "lng": -79.93204951286316
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [-79.97812986373901,32.79093640588344]
-    },
-    "properties": {
-    	"name": "Ashley River Marsh",
-      "title": "Ashley River Marsh",
-      "FOCUS_AREA": "CAWS Ashley River",
-      "description": "Angel Oak Park, 3688 Angel Oak Rd, Johns Island, SC 29455",
-      "marker-color": "#fc4353",
-      "marker-size": "large",
-      "marker-symbol": "monument",
-      "lat": 32.79093640588344,
-      "lng": -79.97812986373901
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [-80.04093647003174,32.77962558419501]
-    },
-    "properties": {
-    	"name": "Alge Island",
-      "title": "Alge Island",
-      "FOCUS_AREA": "CAWS Sea Islands",
-      "description": "Angel Oak Park, 3688 Angel Oak Rd, Johns Island, SC 29455",
-      "marker-color": "#fc4353",
-      "marker-size": "large",
-      "marker-symbol": "monument",
-      "lat": 32.77962558419501,
-      "lng": -80.04093647003174
+      "geometry": {
+          "type": "Point",
+          "coordinates": [-79.765,32.79639]
     }
   }
 ];
+  
+  
+  
+  

@@ -1,66 +1,34 @@
+var map = L.mapbox.map('map', 'brookebc.if5olg5a', {
+                    scrollWheelZoom: false
+                }).setView([32.907, -79.802], 9);
 
- var beachMap = {
+$(function(){
+
+	console.log('main.js loaded');
+	beachmap.init();
+	
+});
+
+var beachmap = {
+
 	init: function() {
-		this.initStyling();
+		// this.initStyling();
 		this.initEvents();
 	},
-	initStyling: function() {
-		var pathArray = window.location.pathname.split( '/' );
-		 var long = pathArray[2];
-		 var lat = pathArray[3];
-		 window.beachDetail = L.map('storyMap').setView([lat,long], 15);
-		 console.log(pathArray);
-		
-		// map.setView([lat,long], 15);
-		// detailMap.addLayer(L.mapbox.tileLayer('calweb.i95d7glk'), 'Base Map', 1);
-		// detailMap.addLayer(L.geoJson(easements), 'Easements', 2);
-		beachMap.addLayer(L.geoJson(beachPoints, { onEachFeature: beachMap.onEachFeature }), 'Lowcountry Open Land Trust', 3);
-	},
 	initEvents: function() {
+		$('.findbeaches').on('click', '.beachme', this.addBeaches);
 		
 	},
-	placeMap: function() {
+	addBeaches: function(event) {
+		event.preventDefault();
+		console.log('gotta love the beach');
 
-	},
-	addLayer: function(layer, name, zIndex) {
-		layer
-        .setZIndex(zIndex)
-        .addTo(beachDetail);
-   
+		// L.geoJson(beachPoints).addTo(map);
+		L.mapbox.featureLayer(beachPoints).addTo(map);
 	}
-	// onEachFeature: function(feature, layer) {
 
-	// 	var popupContent = [
-	// 		"<h2>",
-	// 		feature.properties.name,
-	// 		"</h2>",
-	// 		"<p>View and Tell Your Story</p>",
-	// 		"<p><a class=\"btn btn-success\" ",
-	// 		"href=\"/location/",
-	// 		encodeURIComponent(feature.properties.lng),
-	// 		"/",
-	// 		encodeURIComponent(feature.properties.lat),
-	// 		"/",
-	// 		feature.properties.FOCUS_AREA,
-	// 		"/",
-	// 		feature.properties.name,
-	// 		"\">",
-	// 		"<span class=\"fa fa-plus\"></span> View/Add Story",
-	// 		"</a>",
-	// 		"</p>"
-
-	// 	].join("");
-
-	// 		if (feature.properties && feature.properties.popupContent) {
-	// 			popupContent += feature.properties.popupContent;
-	// 		}
-
-	// 		layer.bindPopup(popupContent);
-
-	// }
 };
-$(function() {
+
+
 	
-	beachMap.init();
-});
 

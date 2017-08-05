@@ -21,6 +21,11 @@ angular.module('beachLoverApp', [
         templateUrl: 'views/beachdetail.html',
         controller: 'MainCtrl'
       })
+       .when('/geo', {
+        authRequired: false, // if true, must log in before viewing this page
+        templateUrl: 'views/geo.html',
+        controller: 'MainCtrl'
+      })
       .when('/contact', {
         authRequired: false, // if true, must log in before viewing this page
         templateUrl: 'views/contact.html',
@@ -30,6 +35,11 @@ angular.module('beachLoverApp', [
         authRequired: false, // if true, must log in before viewing this page
         templateUrl: 'views/login.html',
         controller: 'LoginController'
+      })
+      .when('/map', {
+        authRequired: false, // if true, must log in before viewing this page
+        templateUrl: 'views/map.html',
+        controller: 'MapCtrl'
       })
       .otherwise({
         redirectTo: '/'

@@ -8,3 +8,10 @@ angular.module('beachLoverApp')
       'Karma'
     ];
   });
+  // .controller('MapCtrl', function ($scope) {
+  //    $scope.beachPoints = [
+  //     'HTML5 Boilerplate',
+  //     'AngularJS',
+  //     'Karma'
+  //   ];
+  // });
